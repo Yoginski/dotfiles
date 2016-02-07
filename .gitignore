@@ -1,6 +1,7 @@
 *
 !/.gitignore
 !/.vimrc
+!/.Xresources
 !/.emacs.d/init.el
 !/.xmonad/xmonad.hs
 !/.xmonad/compton.conf
