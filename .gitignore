@@ -1,0 +1,8 @@
+*
+!.gitignore
+!.vimrc
+!.emacs.d/init.el
+!.xmonad/xmonad.hs
+!.xmonad/compton.conf
+!.xmonad/scripts/*
+!.xmonad/icons/*
