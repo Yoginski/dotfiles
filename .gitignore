@@ -7,4 +7,6 @@
 !/.xmonad/compton.conf
 !/.xmonad/scripts/*
 !/.xmonad/icons/*
+!/.i3/*
+!/.gdbinit
 !*/

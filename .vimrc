@@ -57,15 +57,10 @@ NeoBundle 'vim-scripts/wombat256.vim'
 NeoBundle 'morhetz/gruvbox'
 NeoBundle 'jnurmine/Zenburn'
 NeoBundle 'w0ng/vim-hybrid'
-NeoBundle 'sjl/badwolf'
-NeoBundle 'nanotech/jellybeans.vim'
-NeoBundle 'djjcast/mirodark'
+NeoBundle 'chriskempson/base16-vim'
 
 " Golang
 NeoBundle 'fatih/vim-go'
-
-" Nix
-NeoBundle 'LnL7/vim-nix'
 
 call neobundle#end()
 filetype plugin indent on
@@ -89,15 +84,16 @@ set wildmenu
 
 " Airline
 set laststatus=2
+let g:airline_powerline_fonts = 1
 
 " Swap files
 set swapfile
 set dir=~/.vim/tmp
 
 " Colors
+let base16colorspace=256
 set background=dark
-colorscheme mirodark
-hi Normal ctermbg=none
+colorscheme base16-default
 
 " Haskell
 let g:haskellmode_completion_ghc = 0
