@@ -1,0 +1,7 @@
+#!/bin/bash
+LAYOUT=$(xset -q|grep LED| awk '{ print $10 }')
+case "$LAYOUT" in
+  "00000000") echo -n "US" ;;
+  "00001000") echo -n "RU" ;;
+  *) echo -n "unknown" ;;
+esac
