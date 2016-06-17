@@ -30,7 +30,7 @@ set $base0F #a16946
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Liberation Mono 10
+font pango:Inconsolata LGC 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -53,8 +53,8 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec "rofi -show run --fullscreen -font 'Liberation 14' -separator-style none -bw 0 -padding 20 -color-window '#181818, #181818, #303030' -color-normal '#181818, #d8d8d8, #181818, #d8d8d8, #181818' -color-active '#181818, #3694d6, #181818, #3882b6, #fdf6e3' -color-urgent '#181818, #ff5050, #181818, #db2f2f, #eeeeee'"
-bindsym $mod+Tab exec "rofi -show window --fullscreen -font 'Liberation 14' -separator-style none -bw 0 -padding 20 -color-window '#181818, #181818, #303030' -color-normal '#181818, #d8d8d8, #181818, #d8d8d8, #181818' -color-active '#181818, #3694d6, #181818, #3882b6, #fdf6e3' -color-urgent '#181818, #ff5050, #181818, #db2f2f, #eeeeee'"
+bindsym $mod+d exec "rofi -show run --fullscreen -font 'Inconsolata LGC 14' -separator-style none -bw 0 -padding 20 -color-window '#181818, #181818, #303030' -color-normal '#181818, #d8d8d8, #181818, #d8d8d8, #181818' -color-active '#181818, #3694d6, #181818, #3882b6, #fdf6e3' -color-urgent '#181818, #ff5050, #181818, #db2f2f, #eeeeee'"
+bindsym $mod+Tab exec "rofi -show window --fullscreen -font 'Inconsolata LGC 14' -separator-style none -bw 0 -padding 20 -color-window '#181818, #181818, #303030' -color-normal '#181818, #d8d8d8, #181818, #d8d8d8, #181818' -color-active '#181818, #3694d6, #181818, #3882b6, #fdf6e3' -color-urgent '#181818, #ff5050, #181818, #db2f2f, #eeeeee'"
 #bindsym $mod+d exec "rofi -show run --fullscreen -font 'Liberation 14' -separator-style none -bw 0 -padding 30 -color-window '#181818, #181818, #303030' -color-normal '#181818, #cccccc, #181818, #cccccc, #181818' -color-active '#181818, #3694d6, #181818, #3882b6, #fdf6e3' -color-urgent '#181818, #ff5050, #181818, #db2f2f, #eeeeee'"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -170,7 +170,7 @@ bindsym $mod+r mode "resize"
 
 bar {
     position top
-    font pango:Liberation Mono, FontAwesome 10
+    font pango:Inconsolata LGC, FontAwesome 10
 
 	colors {
         separator $base03
@@ -223,4 +223,5 @@ bindsym --release $mod+Shift+P exec "scrot -s '%Y-%m-%d-%H-%M-%S_$wx$h.png' -e '
 exec_always "xss-lock -- physlock"
 exec_always "setxkbmap -layout us,ru -option grp:alt_shift_toggle"
 exec_always compton -b --config "$HOME/.i3/compton.conf"
-exec_always feh --bg-scale /home/prowler/Pictures/wallpaper_fallout.jpg
+exec_always feh --bg-scale /home/prowler/Pictures/wallpaper.png
+exec nm-applet &
