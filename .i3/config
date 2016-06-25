@@ -215,12 +215,15 @@ bindsym XF86AudioLowerVolume exec --no-startup-id "amixer -q set Master 2%- unmu
 bindsym XF86AudioMute exec --no-startup-id "amixer -q set Master toggle; pkill -RTMIN+10 i3blocks"
 
 bindsym Control+Mod1+L exec --no-startup-id "physlock"
+bindsym $mod+N exec --no-startup-id emacsclient -c "~/Notes/Notes.org"
+bindsym $mod+Shift+Return exec --no-startup-id emacsclient -c -e '(switch-to-buffer "*scratch*")'
 bindsym $mod+P exec "scrot '%Y-%m-%d-%H-%M-%S_$wx$h.png' -e 'mv $f ~/Screenshots'"
 bindsym --release $mod+Shift+P exec "scrot -s '%Y-%m-%d-%H-%M-%S_$wx$h.png' -e 'mv $f ~/Screenshots'"
 
 # bindcode Shift+64 exec --no-startup-id "$HOME/.i3/scripts/layout_switch.sh"
 
-exec_always "xss-lock -- physlock"
+exec emacs --daemon
+exec "xss-lock -- physlock"
 exec_always "setxkbmap -layout us,ru -option grp:alt_shift_toggle"
 exec_always compton -b --config "$HOME/.i3/compton.conf"
 exec_always feh --bg-scale /home/prowler/Pictures/wallpaper.png

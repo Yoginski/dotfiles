@@ -28,11 +28,13 @@ values."
      nixos
      emacs-lisp
      haskell
+     php
      python
      racket
      javascript
      html
      go
+     deft
      ;; csharp
      (shell :variables
             shell-default-shell 'multi-term)
@@ -261,6 +263,10 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place you code here."
+  (setq org-agenda-files '("~/Notes"))
+  (setq deft-directory "~/Notes"
+        deft-use-filename-as-title nil
+        deft-use-filter-string-for-filename t)
   (spacemacs/set-leader-keys-for-major-mode 'haskell-mode
     "mht"  'ghc-show-type))
 
