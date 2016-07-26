@@ -32,6 +32,7 @@ values."
      python
      racket
      javascript
+     rust
      html
      go
      deft
@@ -263,10 +264,12 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place you code here."
+  (setq-default rust-enable-racer t)
   (setq org-agenda-files '("~/Notes"))
   (setq deft-directory "~/Notes"
         deft-use-filename-as-title nil
         deft-use-filter-string-for-filename t)
+  (setq tramp-default-method "ssh")
   (spacemacs/set-leader-keys-for-major-mode 'haskell-mode
     "mht"  'ghc-show-type))
 
@@ -277,7 +280,7 @@ you should place you code here."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(rust-format-on-save t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

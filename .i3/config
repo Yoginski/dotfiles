@@ -226,5 +226,5 @@ exec emacs --daemon
 exec "xss-lock -- physlock"
 exec_always "setxkbmap -layout us,ru -option grp:alt_shift_toggle"
 exec_always compton -b --config "$HOME/.i3/compton.conf"
-exec_always feh --bg-scale /home/prowler/Pictures/wallpaper.png
+exec_always feh --bg-scale /home/prowler/Pictures/nix-wallpaper.png
 exec nm-applet &
