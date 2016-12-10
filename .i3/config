@@ -170,7 +170,7 @@ bindsym $mod+r mode "resize"
 
 bar {
     position top
-    font pango:Inconsolata LGC for Powerline 10, FontAwesome 10
+    font pango:FontAwesome, DejaVu Sans 10
 
 	colors {
         separator $base03
@@ -188,7 +188,7 @@ bar {
 bar {
     tray_output none
     workspace_buttons no
-    font pango:Inconsolata LGC for Powerline 10, FontAwesome 10
+    font pango:FontAwesome, DejaVu Sans 10
 
 	colors {
         separator $base03

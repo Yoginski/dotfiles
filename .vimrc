@@ -58,6 +58,7 @@ NeoBundle 'morhetz/gruvbox'
 NeoBundle 'jnurmine/Zenburn'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'chrisbra/Colorizer'
 
 " Golang
 NeoBundle 'fatih/vim-go'
